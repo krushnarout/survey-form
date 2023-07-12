@@ -17,7 +17,7 @@ The project is structured as follows:
 
 Here's a screenshot of the survey form:
 
-![Survey Form Preview]()
+![Survey Form Preview](https://github.com/krushnarout/Survey-Form/assets/129386740/1890ee9a-f542-40be-b6fc-184b215e0ad5)
 
 
 ## Resources
