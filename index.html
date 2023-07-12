@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Anime Survey Form</title>
+</head>
+
+<body translate="no">
+    <div class="Container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Anime Survey Form
+            </h1>
+            <p id="description" class="description-center">
+                Thank you for participating in the Anime survey! Your input is valuable
+            </p>
+        </header>
+        <main class="main-content">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name!"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email!"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="for">Age</label>
+                    <span class="clue">(optional)</span>
+                    <input type="number" name="age" id="number" min="8" max="100" class="form-control"
+                        placeholder="Age!" required>
+                </div>
+                <div>
+                    <p>How were you first introduced to anime?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="friend">Friend</option>
+                        <option value="family">Family</option>
+                        <option value="internet">Internet</option>
+                        <option value="television">Television</option>
+                        <option value="video game">Video game</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How often do you watch anime and/or read manga?</p>
+                    <label>
+                        <input name="watch-time" value="everyday" type="radio" class="input-radio" checked>
+                        Everyday
+                    </label>
+                    <label>
+                        <input name="watch-time" value="week" type="radio" class="input-radio"
+                            checked>Couple times a week
+                    </label>
+                    <label>
+                        <input name="watch-time" value="month" type="radio" class="input-radio" checked>
+                        Few times a month
+                    </label>
+                    <label>
+                        <input name="watch-time" value="not-sure" type="radio" class="input-radio" checked>
+                        Not sure
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <p>Which is your favourite Anime of all time!</p>
+                    <input type="text" name="favourite anime" id="favourite-anime" class="form-control"
+                        placeholder="Enter Your favourite Anime!" required>
+
+                </div>
+                <div class="form-group">
+                    <p>Which is your favourite anime-genre!</p>
+                    <span class="clue">(check all that apply)</span>
+                    <label>
+                        <input name="prefer" value="Action" type="checkbox" class="input-checkbox" />
+                        Action
+                    </label>
+                    <label>
+                        <input name="prefer" value="comedy" type="checkbox" class="input-checkbox" />
+                        Comedy
+                    </label>
+                    <label>
+                        <input name="prefer" value="drama" type="checkbox" class="input-checkbox" />
+                        Drama
+                    </label>
+                    <label>
+                        <input name="prefer" value="Slice-of-life" type="checkbox" class="input-checkbox" />
+                        Slice of life
+                    </label>
+                    <label>
+                        <input name="prefer" value="fantasy" type="checkbox" class="input-checkbox" />
+                        Fantasy
+                    </label>
+                    <label>
+                        <input name="prefer" value="magic" type="checkbox" class="input-checkbox" />
+                        Magic
+                    </label>
+                    <label>
+                        <input name="prefer" value="supernatural" type="checkbox" class="input-checkbox" />
+                        Supernatural
+                    </label>
+                    <label>
+                        <input name="prefer" value="horror" type="checkbox" class="input-checkbox" />
+                        Horror
+                    </label>
+                    <label>
+                        <input name="prefer" value="romance" type="checkbox" class="input-checkbox" />
+                        Romance
+                    </label>
+                    <label>
+                        <input name="prefer" value="sci-fi" type="checkbox" class="input-checkbox" />
+                        Sci-fi
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <p>What type of anime you want to see more in future!</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button"> Submit </button>
+                </div>
+
+            </form>
+    </div>
+    </main>
+</body>
+
+</html>
